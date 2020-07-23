@@ -9,37 +9,50 @@ let leftover = candies % people
 
 // 3. Create a function called greeting that returns "Hello, <name>!",
 // where <name> is the name given as an argument to the function.
+let name = "Sloan"
 function greeting(name) {
-    let name = "Sloan"
-    return "Hello " + name + "!"
+    return ("Hello, " + name + "!")
 }
 
 // 4. Create a function called isOdd that, given a number, will
 // return true if it is odd and false if it is not. An odd number is a
 // number which, when divided by 2, has a remainder of 1 or -1.
-function isOdd() {
-    
+function isOdd(n) {
+    let remainder = n % 2
+    if (remainder === 1 || remainder === -1 ) {
+    return true 
+    } else {
+        return false 
+    }
 }
 
 
 // 5. Create a function called isEven that, given a number, will
 // return true if it is even and false if it is not. An even number is a
 // number which, when divided by 2, has a remainder of 0.
-function isEven() {
+function isEven(n) {
+    let remainder = n % 2
+    if (remainder === 0) {
+        return true 
+    } else {
+        return false
+    }
     
 }
 
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
-function fahrenheitToCelsius() {
+function fahrenheitToCelsius(degrees) {
+    return (degrees -32) * 5 / 9
 
 }
 
 // 6. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
-function celsiusToFahrenheit() {
+function celsiusToFahrenheit(degrees) {
+return (degrees / 5) * 9 + 32
 
 }
 
@@ -49,7 +62,7 @@ function celsiusToFahrenheit() {
 // fahrenheitToCelsius function.
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
-function fahrenheitToKelvin() {
+/*function fahrenheitToKelvin() {
 
 }
 
@@ -97,4 +110,4 @@ function lesser() {
 // output g * 2**d
 
 // Write a function called gcd that takes two arguments and returns the greatest common
-// divisor using the instructions above.
+// divisor using the instructions above.*/
