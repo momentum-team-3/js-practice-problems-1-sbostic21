@@ -27,7 +27,7 @@ describe('greeting', function () {
   })
 })
 
-describe('isOdd', function () {
+ describe('isOdd', function () {
   it('should say 3 is odd', function () {
     assert.equal(true, isOdd(3))
   })
